@@ -14,12 +14,14 @@ Models were therefore selected for oprimization based on their ROC curve and con
 * GradientBoostingClassifier
 
 ## Models selected for optimization:
+In order to reduce the number of false negatives, recall was selected to be the scoring parameter.
+
 * MLPClassifier
 * RandomForestClassifier
 * GradientBoostingClassifier
 
 ## Results:
-* MLPClassifier was found to not be optimizable for this dataset. After performing a GridSearch across multiple parameters it was found that the defaults were optimal.
+* MLPClassifier was found to not be optimizable for this dataset with recall as the scoring parameter. After performing a GridSearch across multiple parameters it was found that the defaults were optimal.
 * RandomForestClassifier was found to be the most responsive to tuning and was able to outperform the other selected models by both reducing its Type II errors and by having the largest area under its ROC curve.
 
 ## Additional Notes:
